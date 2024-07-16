@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    /* outline: 1px dashed #171717; */
+}
+@font-face{
+    font-family: Mantis Rumble_PersonalUseOnly;
+    src:url('./assets/mantis_rumble/Mantis\ Rumble_PersonalUseOnly.ttf')
+}
+.click{
+    cursor: pointer;
+    transition: transform .3s linear;
+}
+.click:hover{transform: scale(.9);}
+h1{
+    font-weight: 100;
+    /* color: #01213c; */
+}
+.mobile_menu p{
+    height:100%;
+    width:100%;
+    padding:10px
+}
+.animate
+{
+    animation-name: pulse;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+
+    100%
+    {
+        transform: scale(1.5);
+    }
+}
