@@ -49,9 +49,11 @@ __SYD._p1 = () =>{
 setTimeout(() =>{
     __v['_p1'].innerHTML = `<video muted controls style = 'width:100%' loop id="autoplay">
         <source src='./assets/intro.mov' type="video/mp4">
-     </video>`
+     </video>
+     <div style = 'height:50px;width:50px;position:absolute;top:10px;right:10px;border-radius:50%;background-size:70%;background-position:center;background-repeat:no-repeat;cursor:pointer;background-image:url("./assets/aud-d.png")' onclick = 'togMute()' id="aud"></div>`
 
-     document.getElementById('autoplay').play()
+     document.getElementById('autoplay').play();
+
 },1000)
 
 __SYD.introVideo = () =>{
