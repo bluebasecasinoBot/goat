@@ -107,9 +107,9 @@ __SYD.page1Socials = () =>{
             style:'width:100%;padding:10px 0;display:flex;justify-content:center;align-items:center;column-gap:20px;row-gap:20px;flex-wrap:wrap'
         },
         [
-            __SYD.page1SocialBtn({contentSrc:'mm'}),
-            __SYD.page1SocialBtn({contentSrc:'tel'}),
-            __SYD.page1SocialBtn({contentSrc:'x'})
+            // __SYD.page1SocialBtn({contentSrc:'mm',link:''}),
+            __SYD.page1SocialBtn({contentSrc:'tel',link:'https://t.me/thegoatonbase'}),
+            __SYD.page1SocialBtn({contentSrc:'x',link:'https://x.com/thegoaton_base'})
         ]
     )
 }
