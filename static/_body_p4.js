@@ -63,7 +63,7 @@ __SYD.buy_tabs = ({title = '' , content = ''}) =>{
                     style:`height:fit-content;min-height:250px;padding:10px 20px;width:100%;background:unset;display:flex;align-items:${__p(['_p4','__flex_child'],'row') === 'row' ? 'center' : 'flex-start'};column-gap:20px;row-gap:20px;flex-direction:${__p(['_p4','__flex_child'],'row')};`
                 },
                 [
-                    __c('div',{style:'min-height:100px;min-width:100px;background-image:url("./assets/logo.jpg");border-radius:50%;background-color:#008488'},[],{genericStyle:['bg_fit']}),
+                    __c('div',{style:'min-height:100px;min-width:100px;background-image:url("./assets/logo.jpg");border-radius:50%;background-color:#0276D7'},[],{genericStyle:['bg_fit']}),
                     __c(
                         'div',
                         {
