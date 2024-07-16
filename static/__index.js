@@ -180,6 +180,7 @@ __SYD.nav_b_text = (text,click) =>{
                         break;
                         default:
                             __v[click].scrollIntoView();
+                            alert('done')
                             // __v['mobileMenu'].blur()
                             
                     }
