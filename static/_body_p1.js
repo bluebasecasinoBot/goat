@@ -35,13 +35,24 @@ __SYD._p1 = () =>{
                     style:'width:90%;max-width:1000px;position:relative'
                 },
                 [
-                   __SYD.introVideo(),
-                   __SYD.p1_overlay()
+                //    __SYD.introVideo(),
+                //    __SYD.p1_overlay()
                 ],
+                {
+                    type:'_p1'
+                }
             )
         ]
     )
 }
+
+setTimeout(() =>{
+    __v['_p1'].innerHTML = `<video muted controls style = 'width:100%' loop id="autoplay">
+        <source src='./assets/intro.mov' type="video/mp4">
+     </video>`
+
+     document.getElementById('autoplay').play()
+},1000)
 
 __SYD.introVideo = () =>{
     return  __c(
@@ -49,8 +60,20 @@ __SYD.introVideo = () =>{
         {
             style:'width:100%',
             controls:'true',
-            src:__p(['introVideo','url'],''),
-        },[],
+            // src:__p(['introVideo','url'],),
+            autoplay:'autoplay',
+            muted:true,
+            loop:true
+
+        },[
+            __c(
+                'source',
+                {
+                    src:'./assets/intro.mov',
+                    type:'video/mp4'
+                }
+            )
+        ],
         {
             createState:{
                 stateName:'introVideo',
@@ -59,7 +82,7 @@ __SYD.introVideo = () =>{
             events:{
                 onloadeddata:(e) =>{
                     // console.log('loaded video');
-                    e.target.play()
+                    // e.target.play()
                 }
             }
         }
