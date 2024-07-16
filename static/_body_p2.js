@@ -55,7 +55,7 @@ __SYD._p2 = () =>{
                                     style:`padding:50px 10px;width:100%;background:#fff;font-family:ubuntu;font-size:${__p(['_p2','_flex'],'row') === 'row' ? '20px' : '13px'};font-weight:900;text-align:center;cursor:pointer`
                                 },
                                 [
-                                    '0x1852B16e564f5413C45986D13442791B08C9D3B8'
+                                    '-----------------------------------------'
 
                                 ],
                                 {
